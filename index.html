@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary px-5">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand fs-1 fst-italic fw-bold" href="#">MEI</a>
+        <a class="navbar-brand mei fw-bold" href="#">MEI</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,21 +34,21 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
+        <div class="collapse navbar-collapse " id="navbarText">
           <ul
-            class="navbar-nav d-flex justify-content-center fs-6 me-auto mb-2 mb-lg-0"
+            class="navbar-nav d-flex justify-content-center align-items-center  fs-6 me-auto mb-2 mb-lg-0"
           >
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
+              <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTANCT</a>
+              <a class="nav-linkactive" aria-current="page" href="#">CONTANCT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PROJECT</a>
+              <a class="nav-link active" aria-current="page"" href="#">PROJECT</a>
             </li>
           </ul>
           <span class="navbar-icon fs-4">
@@ -59,21 +59,24 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="card img-css bg-image">
-        <img src="random.jpg" class="" alt="Responsive image" />
+    <!-- section-img -->    
+    <div class="container-fluid">
+      <div class="card">
+        <img src="ghost.jfif" class="img" alt="Responsive image" />
         <div class="card-img-overlay">
           <div
-            class="card-body d-flex justify-content-center align-items-start flex-column"
+            class="card-body position-absolute flex-column "
           >
-            <h3 class="fw-bold fs-5">Mei</h3>
-            <p>Beginner Developer</p>
+            <h1>MEI</h1>
+            <h4 class="pb-2">Beginner Developer</h4>
+
             <button
               type="button"
               class="btn btn-light border border-secondary"
             >
               Contact Me
             </button>
+
           </div>
         </div>
       </div>
@@ -85,11 +88,12 @@
           <h1>About Me</h1>
         </div>
         <div class="col-9">
-          <p>
+          <p class="pb-4">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus
             quisquam ipsum fugiat impedit ex beatae facilis aperiam tempora
-            eaque! 
-            
+            eaque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            quisquam ipsum fugiat impedit ex beatae facilis aperiam tempora
+            eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, nostrum. Ex reprehenderit, facere enim, saepe eligendi incidunt aut mollitia temporibus accusamus voluptatum iste blanditiis, nam ea. Sit quasi eius repellendus!            
           </p>
           <button type="button" class="btn btn-secondary">
             Download Resume
@@ -97,22 +101,25 @@
         </div>
       </div>
     </div>
+    
+    <!-- skill section -->
 
-    <div class="skills-section p-3">
+    <div class="container-fluid skills-section ">
       <h1 class="d-flex justify-content-center align-items-center">Skills</h1>
-      <p>
+      <p class="text-emphasis">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quia
         qui eum laborum ut, reiciendis aliquam quos nostrum earum quae
         voluptates quod accusamus sequi sint, error adipisci laboriosam dolores
         in.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
         quia qui eum laborum ut, reiciendis aliquam quos nostrum earum quae
         voluptates quod accusamus sequi sint, error adipisci laboriosam dolores
+        in.voluptates quod accusamus sequi sint, error adipisci laboriosam dolores
         in.
       </p>
-      <div class="skills">
+      <div class="container-fluid skills">
         <div class="row">
           <div
-            class="col-6 col-sm focus-text d-flex justify-content-center flex-column"
+            class="col-6 col-sm focus-text d-flex justify-content-center align-items-center flex-column"
           >
             <div class="list-item">My Focus</div>
             <div class="list-item">______________</div>
@@ -126,14 +133,14 @@
           <div
             class="col-6 progress-bar-body"
           >
-            <div class="list-item">
+            <div class="list-item1">
               <div class="container position-relative">
                 <div class="skill-box w-100">
                   <span class="title d-block">HTML</span>
 
                   <div class="skill-bar ">
                     <span class="skill-percentage position-relative d-block">
-                      <span class="digit">80%</span>
+                      <span class="digit ">80%</span>
                     </span>
                   </div>
                 </div>
@@ -185,18 +192,77 @@
         </div>       
       </div>
 
-      <!-- grid -->
-      <h1>Portfolio</h1>
-    <div class="row first d-flex justify-content-center align-items-center px-3">
-        <div class="col-9 list ">
-            <div class="web d-flex justify-content-around align-items-center">WEB-DESIGN<br> __________________</div>
-            <div class="mobile d-flex justify-content-around align-items-center">MOBILE-DESIGN<br> __________________</div>
-            <div class="logo d-flex justify-content-around align-items-center">LOGO-DESIGN<br> ________________ </div>    
-            <div class="web-app d-flex justify-content-around align-items-center">WEB APPLICATION DEVELOPMENT</div>
-            <div class="mobile-app d-flex justify-content-center align-items-center">MOBILE APPLICATION DEVELOPMENT</div>
-            <div class="pwa d-flex justify-content-center align-items-center">PWA DEVELOPMENT</div>        
-        </div>        
+      <!-- grid --> 
+      
+  <h1>Portfolio</h1>
+    <div class="container grid-section pb-5 ">
+        <div class="row">
+             
+          <div class="col-sm col-md-4 web">
+            <div class="icon-box d-flex justify-content-center align-items-center"> 
+            WEB DESIGN
+          </div>
+        </div>
+
+          <div class="col-sm col-md-4 mobile">
+            <div class="icon-box d-flex justify-content-center align-items-center">
+           MOBILE DESIGN
+          </div>
+        </div>
+
+          <div class="col-sm col-md-4 logo">
+            <div class="icon-box d-flex justify-content-center align-items-center">
+            LOGO DESIGN
+          </div>
+        </div>
+
+        <div class="gap-section p-3"></div>
+        <div class="col-sm col-md-4 web-app">
+          <div class="icon-box d-flex justify-content-center align-items-center"> 
+          WEB APPLICATION DESIGN
+        </div>
+      </div>
+
+        <div class="col-sm col-md-4 mobile-app">
+          <div class="icon-box d-flex justify-content-center align-items-center">
+         MOBILE APPLICATION DESIGN
+        </div>
+      </div>
+
+        <div class="col-sm col-md-4 pwa">
+          <div class="icon-box d-flex justify-content-center align-items-center">
+          PWA APPLICATION
+        </div>
+      </div>
+            
+        </div>
+      </div>
+  
+
+    <!-- footer -->
+    <div class="container-fluid footer-content">
+      <div class="row footer-row d-flex justify-content-evenly align-items-center">
+        <div class="col-sm getintouch d-block justify-content-center align-items-center ">
+          <h3>GET IN TOUCH</h3> 
+          <p>thuthusan2992@gmail.com</p> 
+          <p>+959979024576</p>
+        </div>
+        <div class="col-sm d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-secondary">CONTACT ME</button>
+        </div>
+        <div class="col-sm d-flex justify-content-center">
+          <span class="navbar-icon fs-4">
+            <i class="fa-brands fa-linkedin px-2"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter px-2"></i>
+          </span>  
+          <div><p>Copy Right@2023 Mei </p></div>       
+        </div>
+        
+      </div>
     </div>
+    d-flex justify-content-center align-items-center
+    
     
 
     <script

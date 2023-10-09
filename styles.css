@@ -7,138 +7,133 @@ body {
   font-family: "Tinos", serif;
 }
 
-.container .card {
-  position: relative;
+.navbar .container-fluid .mei {
+  font-size: 60px;
 }
 
-.card-body h3, .card-body p {
+.container-fluid .card {
+  position: relative;
+}
+.container-fluid .card img {
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-body {
+  top: 35%;
+  left: 10%;
   color: #fff;
+}
+.card-body h1 {
+  font-size: 50px;
 }
 
 .skills-section {
   background-color: #404040;
   color: #fff;
+  padding: 5px;
 }
 .skills-section p {
   text-indent: 60px;
   white-space: wrap;
 }
+.skills-section .skills .row .col-6 .list-item {
+  font-size: 25px;
+}
 
 .about-me-container {
-  height: 200px;
   padding: 20px;
 }
-.about-me-container .row col-3 {
+.about-me-container .row .col-3 {
   text-shadow: 5px 4px 2px rgba(136, 131, 131, 0.38);
+  height: 250px;
+}
+.about-me-container .row .col-3 h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.about-me-container .row p {
+  font-size: 18px;
 }
 
-.skills {
+.skills-section .skills {
   height: 400px;
 }
-.skills .row .focus-text {
-  text-indent: 60px;
+.skills-section .skills .row .focus-text {
+  text-indent: 70px;
 }
-
-.container {
+@media (max-width: 575.98px) {
+  .skills-section .skills-section {
+    padding: 0;
+  }
+  .skills-section .skills-section .focus-text {
+    font-size: 500px;
+  }
+}
+.skills-section .container {
   max-width: 500px;
   width: 100%;
   border-radius: 7px;
 }
-.container .skill-box {
+.skills-section .container .skill-box {
   width: 100%;
   margin: 20px 0;
 }
-.container .skill-box .title {
+.skills-section .container .skill-box .title {
   color: #fff;
-  font-size: 13px;
+  font-size: 16px;
 }
-.container .skill-box .skill-bar {
+.skills-section .container .skill-box .skill-bar {
   height: auto;
   width: 90%;
   border-radius: 6px;
   background: #F3F6F4;
 }
-.container .skill-box .skill-bar .skill-percentage {
+.skills-section .container .skill-box .skill-bar .skill-percentage {
   height: 100%;
   width: 80%;
   border-radius: 6px;
   background: #cccccc;
 }
-.container .skill-box .skill-bar .skill-percentage .digit {
+.skills-section .container .skill-box .skill-bar .skill-percentage .digit {
   color: #333;
   padding-left: 4px;
 }
-
-.list-item2 .container .skill-box .skill-bar .skill-percentage {
+.skills-section .list-item2 .container .skill-box .skill-bar .skill-percentage {
   width: 40%;
 }
-
-.list-item3 .container .skill-box .skill-bar .skill-percentage {
+.skills-section .list-item3 .container .skill-box .skill-bar .skill-percentage {
   width: 60%;
 }
-
-.list-item4 .container .skill-box .skill-bar .skill-percentage {
+.skills-section .list-item4 .container .skill-box .skill-bar .skill-percentage {
   width: 30%;
 }
 
-.row .list {
+.grid-section {
+  height: auto;
+  max-width: 800px;
+}
+.grid-section .row .mobile .icon-box {
+  background-color: bisque;
+  color: #000;
+}
+.grid-section .row .icon-box {
+  height: 250px;
+  background-color: #000;
   color: #fff;
-  font-size: 15px;
-  padding: 15px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-.row .list .web {
-  background-color: #808080;
-  width: 300px;
-  height: 250px;
-  border-radius: 4px;
-  box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
-  -webkit-box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
-  -moz-box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
+.grid-section .web-app .icon-box, .grid-section .pwa .icon-box {
+  background-color: bisque;
+  color: #000;
 }
-.row .list .mobile {
-  background-color: #202121;
-  width: 300px;
-  height: 250px;
-  border-radius: 4px;
-  box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
-  -webkit-box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
-  -moz-box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
+
+.footer-content {
+  background-color: #000;
+  color: #fff;
 }
-.row .list .logo {
-  background-color: #808080;
-  width: 300px;
+.footer-content .footer-row {
   height: 250px;
-  border-radius: 4px;
-  box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
-  -webkit-box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
-  -moz-box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
-}
-.row .web-app {
-  background-color: #202121;
-  width: 300px;
-  height: 250px;
-  border-radius: 4px;
-  box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
-  -webkit-box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
-  -moz-box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
-}
-.row .mobile-app {
-  background-color: #808080;
-  width: 300px;
-  height: 250px;
-  border-radius: 4px;
-  box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.6);
-  -webkit-box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.6);
-  -moz-box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.6);
-}
-.row .pwa {
-  background-color: #202121;
-  width: 300px;
-  height: 250px;
-  border-radius: 4px;
-  box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
-  -webkit-box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
-  -moz-box-shadow: 10px 10px 32px 0px rgba(77, 77, 77, 0.75);
+  padding: 0 30px;
 }/*# sourceMappingURL=styles.css.map */

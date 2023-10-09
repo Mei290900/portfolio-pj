@@ -7,60 +7,110 @@
 body {
   font-family: "Tinos", serif;
 }
+.navbar{
+  .container-fluid{
+    .mei{
+      font-size: 60px;
+    }
+  }
+}
 
-.container {
+// section-img
+
+.container-fluid {
   .card {
     position: relative;
+    img{
+      // width: 100vw;
+      height: 60vh;
+      object-fit: cover;
+    };
   }
 }
 .card-body{
-  h3,p{
-    color:#fff;
+  top: 35%;
+  left:10%;
+  color:#fff;
+  h1{
+    font-size: 50px;
   }
-}
+  
+} 
 
+// section-2
 
 .skills-section {
   background-color: #404040;
   color: #fff;
+  padding: 5px;
   p{
     text-indent: 60px;
     white-space: wrap;
   }
+  .skills{
+    .row{
+      .col-6{
+        .list-item{
+          font-size: 25px;
+        }
+      }
+    }
+  }
 }
 
-.about-me-container {
-  height: 200px;
+
+
+.about-me-container {  
   padding: 20px;
   .row {
-    col-3 {
+    .col-3 {
       text-shadow: 5px 4px 2px rgba(136, 131, 131, 0.38);
+      height: 250px;
+      h1{
+        display: flex;
+        justify-content: center;
+        font-size: 50px;       
+      }
+    }
+    p{
+      font-size: 18px;      
     }
   }
 }
+
+//skill-section
+.skills-section{
+  // padding: 50px;
+
 .skills{
   height: 400px;
+  
   .row{
     .focus-text{
-      text-indent: 60px;
+      text-indent: 70px;
     }
   }
 }
+@media (max-width: 575.98px){
+  .skills-section{
+  padding:0;
+  .focus-text{
+    font-size: 500px;
+  }
+}}
 //progress bar//
 
 
 .container {
   max-width: 500px;
-  width: 100%;
-  // background: #fff;
-  
+  width: 100%; 
   border-radius: 7px;
   .skill-box {
     width: 100%;
     margin: 20px 0;
     .title {
       color: #fff;
-      font-size: 13px;
+      font-size: 16px;
     }
     .skill-bar {
       height: auto;
@@ -113,83 +163,47 @@ body {
     }
   }
 }
-//grid
-.row{
-.list{ 
-  color:#fff;
-  font-size: 15px;
-  padding: 15px;
-  display: grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));             
-  
-  .web{
-      background-color:#808080 ;
-      width: 300px;
-      height:250px;
-      border-radius: 4px;
-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75);
--webkit-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75);
--moz-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75); 
-      
-  }
-  .mobile{
-      background-color:#202121;
-      width: 300px;
-      height:250px;
-      border-radius: 4px;
-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75);
--webkit-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75);
--moz-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75); 
-  }
-  .logo{
-      background-color: #808080;
-      width: 300px;
-      height:250px;
-      border-radius: 4px;
-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75);
--webkit-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75);
--moz-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75); 
-  }
 }
-// .second-list{ 
-//   color:#fff;
-//   font-size: 15px;
-//   font-weight: 400; 
-//   display: grid;
-//   grid-template-columns:repeat(3,minmax(0,1fr));       
-        
+
+//Grid section
+.grid-section{
+  height: auto;
+  max-width: 800px;
+  .row{    
+    .mobile{
+      .icon-box{
+          background-color: bisque;
+          color:#000;
+      }
+  }
+    .icon-box{
+      // width: 250px;
+      height: 250px;
+      background-color:#000;
+      color:#fff;
+    }
+  }
+  .web-app, .pwa{
+    .icon-box{
+      background-color: bisque;
+      color: #000;
+    }
+  }
   
-  .web-app{
-      background-color:#202121 ;
-      width: 300px;
-      height:250px;
-      border-radius: 4px;
-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75);
--webkit-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75);
--moz-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75); 
-      
-      
-  }
-  .mobile-app{
-      background-color:#808080;
-      width: 300px;
-      height:250px;
-      border-radius: 4px;
-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.6);
--webkit-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.6);
--moz-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.6); 
-  }
-  .pwa{
-      background-color: #202121;
-      width: 300px;
-      height:250px;
-      border-radius: 4px;
-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75);
--webkit-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75);
--moz-box-shadow: 10px 10px 32px 0px rgba(77,77,77,0.75); 
-  }
-}
-@media screen {min-width: ;
   
 }
 
+
+
+
+//footer
+.footer-content{
+  background-color: #000;
+  color: #fff;  
+  .footer-row{
+    height: 250px;
+    padding: 0 30px ;
+    
+  }
+  
+}
