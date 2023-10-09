@@ -56,6 +56,14 @@ body {
 .about-me-container .row p {
   font-size: 18px;
 }
+.about-me-container .row .btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me-container .row .btn-wrapper .btn {
+  width: 150px;
+}
 
 .skills-section .para {
   text-indent: 50px;
