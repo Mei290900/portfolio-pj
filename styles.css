@@ -43,26 +43,30 @@ body {
 }
 
 .about-me-container {
-  padding: 20px;
+  padding: 50px;
+  height: auto;
 }
-.about-me-container .row .col-3 {
+.about-me-container .row .col-lg-3 {
   text-shadow: 5px 4px 2px rgba(136, 131, 131, 0.38);
-  height: 250px;
 }
-.about-me-container .row .col-3 h1 {
+.about-me-container .row .col-lg-3 h1 {
   display: flex;
   justify-content: center;
-  font-size: 50px;
 }
 .about-me-container .row p {
   font-size: 18px;
 }
 
+.skills-section .para {
+  text-indent: 50px;
+  text-wrap: wrap;
+}
 .skills-section .skills {
-  height: 400px;
+  height: auto;
 }
 .skills-section .skills .row .focus-text {
-  text-indent: 70px;
+  text-indent: 10px;
+  font-size: 20px;
 }
 @media (max-width: 575.98px) {
   .skills-section .skills-section {
@@ -115,6 +119,47 @@ body {
   height: auto;
   max-width: 800px;
 }
+.grid-section .row .web, .grid-section .row .logo, .grid-section .row .mobile-app {
+  color: bisque;
+}
+.grid-section .row .btn {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  background: white;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+.grid-section .row .btn:after, .grid-section .row .btn:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+.grid-section .row .btn:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+.grid-section .row .btn:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+}
+.grid-section .row .btn:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.grid-section .row .btn:hover:before, .grid-section .row .btn:hover:after {
+  width: 100%;
+  height: 100%;
+}
 .grid-section .row .mobile .icon-box {
   background-color: bisque;
   color: #000;
@@ -122,7 +167,6 @@ body {
 .grid-section .row .icon-box {
   height: 250px;
   background-color: #000;
-  color: #fff;
 }
 .grid-section .web-app .icon-box, .grid-section .pwa .icon-box {
   background-color: bisque;
@@ -134,6 +178,6 @@ body {
   color: #fff;
 }
 .footer-content .footer-row {
-  height: 250px;
+  height: 200px;
   padding: 0 30px;
 }/*# sourceMappingURL=styles.css.map */
